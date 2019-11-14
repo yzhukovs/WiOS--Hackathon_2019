@@ -28,8 +28,8 @@
 		44675456237E0A0600B05073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44675459237E0A0600B05073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4467545B237E0A0600B05073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "TimeConverter/Event+CoreDataClass.swift"; sourceTree = "<group>"; };
-		44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataProperties.swift"; path = "TimeConverter/Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,7 @@
 		4467543E237E0A0500B05073 = {
 			isa = PBXGroup;
 			children = (
-				44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */,
-				44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */,
+				44675465237E10E200B05073 /* Core Data */,
 				44675449237E0A0500B05073 /* TimeConverter */,
 				44675448237E0A0500B05073 /* Products */,
 			);
@@ -70,7 +69,6 @@
 				44675453237E0A0600B05073 /* Assets.xcassets */,
 				44675458237E0A0600B05073 /* LaunchScreen.storyboard */,
 				4467545B237E0A0600B05073 /* Info.plist */,
-				4467544E237E0A0500B05073 /* TimeConverter.xcdatamodeld */,
 				44675455237E0A0600B05073 /* Preview Content */,
 			);
 			path = TimeConverter;
@@ -82,6 +80,16 @@
 				44675456237E0A0600B05073 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44675465237E10E200B05073 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */,
+				4467544E237E0A0500B05073 /* TimeConverter.xcdatamodeld */,
+				44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */,
+			);
+			path = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

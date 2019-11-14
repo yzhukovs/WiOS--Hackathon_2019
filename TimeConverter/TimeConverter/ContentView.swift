@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @FetchRequest(entity: Event.entity(), sortDescriptors: []) var entry: FetchedResults<Event>
     var body: some View {
         Text("Hello, World!")
     }
