@@ -1,1 +1,2 @@
-# Women in iOS -- Hackathon 2019
+# Women in iOS -- Hackathon 2019 Monday, November 18th.
+Starter project with Core Data
