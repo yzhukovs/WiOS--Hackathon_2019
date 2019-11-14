@@ -1,1 +1,1 @@
-# WiOS--Hackathon_2019
+# Women in iOS -- Hackathon 2019
