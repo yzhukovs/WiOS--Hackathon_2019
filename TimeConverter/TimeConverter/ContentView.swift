@@ -11,32 +11,37 @@ import SwiftUI
 struct ContentView: View {
     @FetchRequest(entity: Event.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)]) var entry: FetchedResults<Event>
     @Environment(\.managedObjectContext) var moc
-    // @Binding var course = [String]
-        var courses = ["SCY", "SCM", "LCM"]
+    var courses = ["SCY", "SCM", "LCM"]
     @State private var selectedCourse = 0
-    var body: some View {
     
+    var body: some View {
+        
         VStack (alignment: .center) {
-                Text("Pick Course")
-                Picker(selection: $selectedCourse, label: Text("Pick Course")) {
-                    ForEach(0 ..< courses.count) {
-                        Text(self.courses[$0])
-                        
-                    }
+            Text("Pick Course")
+            Picker(selection: $selectedCourse, label: Text("")) {
+                ForEach(0 ..< courses.count) {
+                    Text(self.courses[$0])
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
+                
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
             Spacer()
+            List {
+                ForEach(entry, id:\.self ) { enter in
+                    Text("\(enter.course)")
+                }
+            }
+            
             VStack {
                 Button(action: ({
                     //  Initializes new Event and saves using the @Environment's ManagedObjectContext
                     let event = Event(context: self.moc)
-                    
                     event.course = self.courses[self.selectedCourse]
                     print(event.course)
-                    
                     do {
                         try self.moc.save()
+                        
                     } catch {
                         print(error)
                     }
@@ -46,6 +51,7 @@ struct ContentView: View {
                     
                 })) {
                     HStack {
+                        
                         Image(systemName: "plus.circle.fill")
                             .foregroundColor(.green)
                             .imageScale(.large)
@@ -53,9 +59,12 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+                
             }
             
         }
+        
+        
     }
     
 }
