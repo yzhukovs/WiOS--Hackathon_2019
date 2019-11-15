@@ -17,7 +17,7 @@ extension Event {
         return NSFetchRequest<Event>(entityName: "Event")
     }
 
-    @NSManaged public var course: String?
+    @NSManaged public var course: String
     @NSManaged public var stroke: String?
     @NSManaged public var distance: Int16
     @NSManaged public var timeEntered: String?
