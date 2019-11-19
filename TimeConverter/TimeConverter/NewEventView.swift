@@ -8,14 +8,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NewEventView: View {
     @FetchRequest(entity: Event.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)]) var entry: FetchedResults<Event>
     @Environment(\.managedObjectContext) var moc
     var courses = ["SCY", "SCM", "LCM"]
     @State private var selectedCourse = 0
     
     var body: some View {
-        
         VStack (alignment: .center) {
             Text("Pick Course")
             Picker(selection: $selectedCourse, label: Text("")) {
@@ -46,7 +45,7 @@ struct ContentView: View {
                         print(error)
                     }
                     
-                    //  Reset the temporary in-memory storage variables for the next new entry
+                    //  Reset the temporary in-memory storage variable for the next new entry
                     self.selectedCourse = 0
                     
                 })) {
@@ -68,6 +67,6 @@ struct ContentView: View {
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NewEventView()
     }
 }

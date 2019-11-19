@@ -10,12 +10,13 @@
 		4467544B237E0A0500B05073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467544A237E0A0500B05073 /* AppDelegate.swift */; };
 		4467544D237E0A0500B05073 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4467544C237E0A0500B05073 /* SceneDelegate.swift */; };
 		44675450237E0A0500B05073 /* TimeConverter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4467544E237E0A0500B05073 /* TimeConverter.xcdatamodeld */; };
-		44675452237E0A0500B05073 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44675451237E0A0500B05073 /* ContentView.swift */; };
+		44675452237E0A0500B05073 /* NewEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44675451237E0A0500B05073 /* NewEventView.swift */; };
 		44675454237E0A0600B05073 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44675453237E0A0600B05073 /* Assets.xcassets */; };
 		44675457237E0A0600B05073 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44675456237E0A0600B05073 /* Preview Assets.xcassets */; };
 		4467545A237E0A0600B05073 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44675458237E0A0600B05073 /* LaunchScreen.storyboard */; };
 		44675463237E0ACB00B05073 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */; };
 		44675464237E0ACB00B05073 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */; };
+		446754692383721400B05073 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446754682383721400B05073 /* EventListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +24,14 @@
 		4467544A237E0A0500B05073 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4467544C237E0A0500B05073 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4467544F237E0A0500B05073 /* TimeConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeConverter.xcdatamodel; sourceTree = "<group>"; };
-		44675451237E0A0500B05073 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44675451237E0A0500B05073 /* NewEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventView.swift; sourceTree = "<group>"; };
 		44675453237E0A0600B05073 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44675456237E0A0600B05073 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44675459237E0A0600B05073 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4467545B237E0A0600B05073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		446754682383721400B05073 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,8 @@
 			children = (
 				4467544A237E0A0500B05073 /* AppDelegate.swift */,
 				4467544C237E0A0500B05073 /* SceneDelegate.swift */,
-				44675451237E0A0500B05073 /* ContentView.swift */,
+				44675451237E0A0500B05073 /* NewEventView.swift */,
+				446754682383721400B05073 /* EventListView.swift */,
 				44675453237E0A0600B05073 /* Assets.xcassets */,
 				44675458237E0A0600B05073 /* LaunchScreen.storyboard */,
 				4467545B237E0A0600B05073 /* Info.plist */,
@@ -164,10 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				44675464237E0ACB00B05073 /* Event+CoreDataProperties.swift in Sources */,
+				446754692383721400B05073 /* EventListView.swift in Sources */,
 				4467544B237E0A0500B05073 /* AppDelegate.swift in Sources */,
 				4467544D237E0A0500B05073 /* SceneDelegate.swift in Sources */,
 				44675463237E0ACB00B05073 /* Event+CoreDataClass.swift in Sources */,
-				44675452237E0A0500B05073 /* ContentView.swift in Sources */,
+				44675452237E0A0500B05073 /* NewEventView.swift in Sources */,
 				44675450237E0A0500B05073 /* TimeConverter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
