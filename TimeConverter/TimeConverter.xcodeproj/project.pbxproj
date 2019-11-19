@@ -17,6 +17,7 @@
 		44675463237E0ACB00B05073 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */; };
 		44675464237E0ACB00B05073 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */; };
 		446754692383721400B05073 /* EventListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446754682383721400B05073 /* EventListView.swift */; };
+		A7778890238379D600A47320 /* FilteredEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A777888F238379D600A47320 /* FilteredEventList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		44675461237E0ACB00B05073 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		44675462237E0ACB00B05073 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		446754682383721400B05073 /* EventListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListView.swift; sourceTree = "<group>"; };
+		A777888F238379D600A47320 /* FilteredEventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredEventList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				4467544C237E0A0500B05073 /* SceneDelegate.swift */,
 				44675451237E0A0500B05073 /* NewEventView.swift */,
 				446754682383721400B05073 /* EventListView.swift */,
+				A777888F238379D600A47320 /* FilteredEventList.swift */,
 				44675453237E0A0600B05073 /* Assets.xcassets */,
 				44675458237E0A0600B05073 /* LaunchScreen.storyboard */,
 				4467545B237E0A0600B05073 /* Info.plist */,
@@ -173,6 +176,7 @@
 				44675463237E0ACB00B05073 /* Event+CoreDataClass.swift in Sources */,
 				44675452237E0A0500B05073 /* NewEventView.swift in Sources */,
 				44675450237E0A0500B05073 /* TimeConverter.xcdatamodeld in Sources */,
+				A7778890238379D600A47320 /* FilteredEventList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

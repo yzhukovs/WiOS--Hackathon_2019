@@ -26,6 +26,23 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
         let contentView = EventListView().environment(\.managedObjectContext, context)
 
+        //  Initializes new Event and saves using the @Environment's ManagedObjectContext
+//        for _ in (0 ..< 50) {
+//            let event = Event(context: context)
+//            event.course = ["SCY", "SCM", "LCM"].randomElement() ?? ""
+//            event.stroke = Stroke.allCases.randomElement()?.rawValue ?? ""
+//            event.date = Date()
+//            event.distance = (50 ..< 501).randomElement() ?? 25
+//            event.timeEntered = "05:31.45"
+//        }
+//
+//        do {
+//            try context.save()
+//
+//        } catch {
+//            print(error)
+//        }
+
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
