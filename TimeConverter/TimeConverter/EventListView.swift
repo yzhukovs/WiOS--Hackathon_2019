@@ -13,24 +13,23 @@ struct EventListView: View {
 
 
     var body: some View {
+        NavigationView {
+            VStack {
 
-        VStack {
-            if entry.count == 0 {
-                NavigationView {
-                        NavigationLink(destination: NewEventView()) {
-                           VStack {
-                                Text("Add Entry")
-                                Image(systemName: "plus")
-                                    .foregroundColor(Color.blue)
-                            }
-                    }
-                }
-            }  else {
                 List {
                     ForEach(entry, id:\.self ) { enter in
                         Text("\(enter.course)")
                     }
                 }
+                .navigationBarTitle("Your Saved Events")
+
+                NavigationLink(destination: NewEventView()) {
+                    VStack {
+                        Image(systemName: "plus")
+                            .foregroundColor(Color.blue)
+                    }
+                }
+
             }
         }
     }
