@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct NewEventView: View {
-    @FetchRequest(entity: Event.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)]) var entry: FetchedResults<Event>
     @Environment(\.managedObjectContext) var moc
     var courses = ["SCY", "SCM", "LCM"]
     @State private var selectedCourse = 0
@@ -26,11 +25,7 @@ struct NewEventView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
             Spacer()
-            List {
-                ForEach(entry, id:\.self ) { enter in
-                    Text("\(enter.course)")
-                }
-            }
+            
             
             VStack {
                 Button(action: ({

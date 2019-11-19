@@ -9,17 +9,29 @@
 import SwiftUI
 
 struct EventListView: View {
+    @FetchRequest(entity: Event.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)]) var entry: FetchedResults<Event>
+
+
     var body: some View {
-        NavigationView {
-            NavigationLink(destination: NewEventView()) {
-                VStack {
-                    Text("Add Entry")
-                    Image(systemName: "plus")
-                        .foregroundColor(Color.blue)
+
+        VStack {
+            if entry.count == 0 {
+                NavigationView {
+                        NavigationLink(destination: NewEventView()) {
+                           VStack {
+                                Text("Add Entry")
+                                Image(systemName: "plus")
+                                    .foregroundColor(Color.blue)
+                            }
+                    }
                 }
-                
+            }  else {
+                List {
+                    ForEach(entry, id:\.self ) { enter in
+                        Text("\(enter.course)")
+                    }
+                }
             }
-            .buttonStyle(PlainButtonStyle())
         }
     }
 }
